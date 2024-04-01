@@ -11,5 +11,5 @@ for i=2:length(u)
         x_hat(i,j)=predict(gpmodel{j},[x_hat(i-1,:) u(i-1)]);      
     end
 end
-save('Yan_cart_x_hat.mat', 'x_hat');
+save('cart_x_hat.mat', 'x_hat');
 immse(x_hat,x)
